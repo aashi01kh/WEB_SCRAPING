@@ -1,0 +1,7 @@
+[submodule "front-ent"]
+    path = front-end
+    url = https://github.com/aashi01kh/Frontend-Template-2.git
+    
+[submodule "front-end"]
+	path = front-end
+	url = https://github.com/aashi01kh/Frontend-Template-2.git
