@@ -65,7 +65,7 @@ app.get('/scrape', async (req, res) => {
     const firstFiveUrls = await letsgeturl(htmlContent);
 
 
-      for(let i = 0 ; i <= 5 ; i++){
+      for(let i = 0 ; i < 5 ; i++){
                ans[i] = await getUrlBody(firstFiveUrls[i]);
               console.log(ans[i]);
       }
