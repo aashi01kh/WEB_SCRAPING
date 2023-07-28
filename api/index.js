@@ -55,13 +55,12 @@ async function letsgeturl(htmlContent) {
 app.get('/scrape', async (req, res) => {
     const searchTerm = req.query.search;
     console.log(searchTerm);
-    // const a = ['a','b'];
-    // res.send(a);
+ 
   
-  // const response = await makeAxiosRequest(searchTerm); // Using await here to get the response
+   const response = await makeAxiosRequest(searchTerm); // Using await here to get the response
     const htmlContent = response.data;
     const ans = [];
-    //const firstFiveUrls = [];
+    
   
     const firstFiveUrls = await letsgeturl(htmlContent);
 
